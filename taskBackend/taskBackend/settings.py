@@ -28,12 +28,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "tasks",  # ✅ Ensure your app is correctly listed
+    "tasks",
     "rest_framework",
     "corsheaders",
     "rest_framework_simplejwt",
     "rest_framework.authtoken",
-    "rest_framework_simplejwt.token_blacklist",  # ✅ Optional for token blacklisting
+    "rest_framework_simplejwt.token_blacklist",
 ]
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
