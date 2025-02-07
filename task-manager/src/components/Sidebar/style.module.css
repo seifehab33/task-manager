@@ -1,0 +1,11 @@
+.sideBar {
+  background-color: #6366f1;
+  padding: 20px 10px;
+}
+.SbLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 20px;
+  padding: 5em 1em;
+}
