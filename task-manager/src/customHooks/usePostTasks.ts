@@ -9,9 +9,10 @@ const API_BASE_URL = "http://localhost:8000/api/tasks/create/";
 export const useCreateTask = (resetFormData: () => void) => {
   const dispatch = useAppDispatch();
   const queryClient = useQueryClient();
-  const token = sessionStorage.getItem("jwt_token");
+
   const { mutate: createTask, isPending } = useMutation({
     mutationFn: async (newTask: NewTask) => {
+      const token = localStorage.getItem("token");
       if (!token) throw new Error("User is not authenticated");
 
       const response = await axios.post(API_BASE_URL, newTask, {
