@@ -53,8 +53,8 @@ const ProgressTask: React.FC = () => {
   };
 
   return (
-    <div className="my-10 mx-40">
-      <div className="heading text-5xl font-bold text-center mb-3">
+    <div className="my-20 mx-10 lg:mx-40">
+      <div className="heading  sm:text-sm md:text-sm lg:text-[15px] xl:text-5xl font-bold text-center mb-3">
         InProgress Tasks Board
       </div>
       <div className="grid grid-cols-3 gap-3">

@@ -8,4 +8,4 @@ export interface Task {
   priority: "P0" | "P1" | "P2";
   author_name: string; // Now included!
 }
-export type NewTask = Omit<Task, "id" | "created_at" | "author_name">;
+export type NewTask = Omit<Task, "id" | "author_name">;

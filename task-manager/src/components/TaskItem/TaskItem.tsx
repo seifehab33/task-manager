@@ -28,7 +28,7 @@ const TaskItem: React.FC<TaskItemProps> = ({
       key={task.id}
     >
       <div
-        className="flex h-32 justify-center items-center relative rounded-lg"
+        className="flex h-32 justify-center items-center relative rounded-lg text-center"
         style={{ backgroundColor: randomColor }}
       >
         <p className="capitalize font-extrabold">{task.title}</p>
